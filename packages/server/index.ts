@@ -6,6 +6,8 @@ const API_KEY = process.env.OPENAI_API_KEY;
 
 app.get('/', (req: Request, res: Response) => { res.send("Hello World!") })
 
+app.get('/api/hello', (req: Request, res: Response) => { res.json({ message: "Hello World" }) })
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 })
