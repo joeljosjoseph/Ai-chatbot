@@ -1,4 +1,4 @@
-# mosh-app
+# AI-chatbot
 
 To install dependencies:
 
