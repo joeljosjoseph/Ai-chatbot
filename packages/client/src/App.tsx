@@ -18,7 +18,7 @@ const App = (props: Props) => {
     fetchAPI("/api/hello");
   }, []);
 
-  return <div>{message}</div>;
+  return <div className="p-4 text-3xl font-bold">{message}</div>;
 };
 
 export default App;
