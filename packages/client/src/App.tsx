@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Button } from "./components/ui/button";
 
 type Props = {};
 
@@ -18,7 +19,12 @@ const App = (props: Props) => {
     fetchAPI("/api/hello");
   }, []);
 
-  return <div className="p-4 text-3xl font-bold">{message}</div>;
+  return (
+    <div className="p-4">
+      <p className="p-4 text-3xl font-bold">{message}</p>
+      <Button>Click Me</Button>
+    </div>
+  );
 };
 
 export default App;
