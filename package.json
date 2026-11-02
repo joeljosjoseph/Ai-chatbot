@@ -5,11 +5,13 @@
   "private": true,
   "scripts": {
     "typecheck": "bun check",
-    "dev": "bun run index.ts"
+    "dev": "bun run index.ts",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "concurrently": "^10.0.6"
+    "concurrently": "^10.0.6",
+    "prettier": "^3.9.10"
   },
   "peerDependencies": {
     "typescript": "^7"

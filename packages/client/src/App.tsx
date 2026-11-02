@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Button } from "./components/ui/button";
+import { useEffect, useState } from 'react';
+import { Button } from './components/ui/button';
 
 type Props = {};
 
 const App = (props: Props) => {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
 
   const fetchAPI = (api: string) => {
     fetch(api)
@@ -16,7 +16,7 @@ const App = (props: Props) => {
   };
 
   useEffect(() => {
-    fetchAPI("/api/hello");
+    fetchAPI('/api/hello');
   }, []);
 
   return (
